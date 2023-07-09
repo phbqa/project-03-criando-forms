@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #EFEFEF;
+    font-family:'Poppins';
+    color: #4E4958;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 436px;
+    background: #535971;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.page{
+    width: 750px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    margin-top: 140px;
+    padding-bottom: 50px;
+}
+
+form{
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    padding: 64px 64px 10px;
+}
+fieldset{
+    border: none;
+}
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h1, legend{
+    font-family:'Staatliches';
+}
+h1{
+    color: #FFF;
+    font-size: 55px;
+    padding-bottom: 40px;
+}
+p{
+    color: #FFF;
+    font-size: 20px;
+    width: 417px;
+}
+fieldset legend{
+    color: #535971;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+fieldset > legend:first-child{
+    padding-bottom: 16px;
+}
+
+#line{
+    border-top: 1px solid #E6E6F0;
+    padding-top: 8px;
+}
+
+span{
+    color: #C1BCCC;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.nome-sobrenome{
+    display: flex;
+    gap: 40px;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-wrapper input{
+    background: #FAFAFC;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    height: 56px;
+    padding: 0 24px;
+    color: #6c6a71;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+fieldset .primeira, fieldset .segunda{
+    display: flex;
+    gap: 8px;
+}
+
+#date-first{
+    width: 300px;
+    margin-right: 30px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+
+footer{
+    border-radius: 0px 0px 20px 20px;
+    background: #535971;
+    width: 750px;
+    height: 160px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+footer .button{
+    color: #FFF;
+    font-family: Staatliches;
+    font-size: 20px;
+    line-height: 26px;
+
+    margin: auto;
+    background: #FF5374;
+    border: none;
+    border-radius: 20px;
+    width: 608px;
+    padding: 15px 40px;
+
+}
+
+footer .button:hover{
+    background: #fc375e;
+}
+
+fieldset > div:nth-last-child(1){
+    padding-bottom: 30px;
+}
